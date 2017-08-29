@@ -11,7 +11,6 @@ import UIKit
 
 @IBDesignable
 class Content : UIView {
-    @IBOutlet weak var view: UIView!
     @IBOutlet weak var width: NSLayoutConstraint!
     required override public init(frame: CGRect) {
         super.init(frame: frame)

@@ -66,7 +66,6 @@
             <nil key="simulatedStatusBarMetrics"/>
             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
             <connections>
-                <outlet property="view" destination="skf-Z6-NJL" id="1Ah-09-HFK"/>
                 <outlet property="width" destination="csC-7f-Sm1" id="Asu-SK-Dgm"/>
             </connections>
             <point key="canvasLocation" x="144" y="-82"/>

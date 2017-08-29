@@ -35,13 +35,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 1
     }
     
-    /*- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    CGFloat result;
-    result = 120.0f;
-    return result;
-    }*/
-    
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 398
     }
@@ -50,12 +43,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         ViewController.w = view.frame.width
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell") as! TableCell
-
-        
-        print(view.frame.width)
-        
-//        cell.content?.width.constant = view.frame.width
-        
         return cell
     }
 }

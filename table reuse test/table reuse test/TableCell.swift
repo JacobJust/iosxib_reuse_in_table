@@ -13,7 +13,6 @@ import UIKit
 class TableCell : UITableViewCell {
     
     var content: Content?
-    var w: CGFloat = 0
     
     open override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,12 +23,14 @@ class TableCell : UITableViewCell {
         doInit()
     }
     
+    open override func prepareForReuse() {
+         print("hej2: \(frame.width)")
+    }
+    
+    
     func doInit() {
         let content = Bundle(for: Content.self).loadNibNamed("Content", owner: self, options: nil)![0] as! Content
-        
         content.width.constant =  ViewController.w
-        
-        print("hej: \(ViewController.w)")
         self.contentView.addSubview(content)
     }
 }
