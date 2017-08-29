@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var table: UITableView!
+    
+    static var w: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,8 +48,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        ViewController.w = view.frame.width
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell") as! TableCell
 
+        
+        print(view.frame.width)
+        
+//        cell.content?.width.constant = view.frame.width
         
         return cell
     }

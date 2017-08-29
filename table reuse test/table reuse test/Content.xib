@@ -11,15 +11,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Content" customModule="table_reuse_test" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="614" height="398"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB" customClass="Content" customModule="table_reuse_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skf-Z6-NJL">
-                    <rect key="frame" x="0.0" y="0.0" width="614" height="398"/>
+                <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skf-Z6-NJL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="398"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vn3-HX-r3J">
-                            <rect key="frame" x="564" y="17" width="42" height="21"/>
+                            <rect key="frame" x="325" y="17" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -37,13 +37,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxf-I2-wtD">
-                            <rect key="frame" x="564" y="362" width="42" height="21"/>
+                            <rect key="frame" x="325" y="362" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.28291556680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Hxf-I2-wtD" secondAttribute="trailing" constant="8" id="DbL-V7-bXj"/>
                         <constraint firstItem="Vn3-HX-r3J" firstAttribute="top" secondItem="skf-Z6-NJL" secondAttribute="top" constant="17" id="Hqh-bb-RZZ"/>
@@ -51,6 +51,7 @@
                         <constraint firstAttribute="bottom" secondItem="Hxf-I2-wtD" secondAttribute="bottom" constant="15" id="Jkd-k0-9rK"/>
                         <constraint firstItem="mFA-ly-g7B" firstAttribute="leading" secondItem="skf-Z6-NJL" secondAttribute="leading" constant="19" id="Zow-p0-dFb"/>
                         <constraint firstAttribute="height" constant="398" id="cng-ql-V0q"/>
+                        <constraint firstAttribute="width" constant="375" id="csC-7f-Sm1"/>
                         <constraint firstAttribute="trailing" secondItem="Vn3-HX-r3J" secondAttribute="trailing" constant="8" id="mLe-yJ-Cka"/>
                         <constraint firstItem="VQS-75-YYo" firstAttribute="leading" secondItem="skf-Z6-NJL" secondAttribute="leading" constant="19" id="qcR-Ws-gsD"/>
                         <constraint firstAttribute="bottom" secondItem="VQS-75-YYo" secondAttribute="bottom" constant="8" id="zZf-EE-fQg"/>
@@ -60,10 +61,14 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="skf-Z6-NJL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="10k-Vu-w5m"/>
-                <constraint firstAttribute="trailing" secondItem="skf-Z6-NJL" secondAttribute="trailing" id="QL7-mf-BL1"/>
                 <constraint firstItem="skf-Z6-NJL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RlC-up-jp4"/>
             </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            <connections>
+                <outlet property="view" destination="skf-Z6-NJL" id="1Ah-09-HFK"/>
+                <outlet property="width" destination="csC-7f-Sm1" id="Asu-SK-Dgm"/>
+            </connections>
             <point key="canvasLocation" x="144" y="-82"/>
         </view>
     </objects>
